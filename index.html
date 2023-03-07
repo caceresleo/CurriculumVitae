@@ -10,27 +10,122 @@
 
     <!-- Bootstrap 5-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--  iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Mulish:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="container-fluid  mt-4">
-        <div class="container">
-            <div class="nombreProfesion">
-                <h1 id="nombrePrincipal">Leonardo Gabriel Cáceres</h1>
-                <h3 id="profesionPrincipal">Ingeniero Electronico</h3>
-            </div>
-            <div class="imagenLogo">
-                <img id="fotoCarnet" class="fotoPpal" src="logo1.png" alt="fotoCarnet">
-            </div>
+        <div class="container  encabezadoDatos">            
+                <div class="imagenLogo ">
+                    <img id="fotoCarnet" class="fotoPpal" src="logo1.png" alt="fotoCarnet">
+                </div>
+                <div class="nombreProfesion ">
+                    <p id="nombrePrincipal">Leonardo Gabriel Cáceres</p>
+                    <h3 id="profesionPrincipal">Lic. en Administración</h3>
+                </div>
         </div>    
     </header>
-    <aside class="bandaAside">
-        <h2>SEGUNDO TITULO</h2>
-    </aside>
-    <section class="seccionPrincipal">
-        <h3>Tercer titulo</h3>
-    </section>
+    <div class="container  contenidoTotal">
+            <aside class="bandaAside ">
+                <div class="listadoItems">
+                    <ul>
+                        <li><button > <i class="bi bi-person-bounding-box"></i>   Sobre Mi</button></li>
+                        <li><button> <i class="bi bi-book-half"></i>   Formación Académica</button> </li>
+                        <li><button> <i class="bi bi-globe2"></i>   Idiomas</button> </li>
+                        <li><button> <i class="bi bi-briefcase-fill"></i>   Experiencia Laboral</button> </li>
+                        <li><button> <i class="bi bi-search-heart"></i>   Otros Conocimientos</button></li>
+                        <li><button> <i class="bi bi-person-lines-fill"></i>   Contacto</button></li>
+                    </ul>
+                </div>
+            </aside>
+            <section class="seccionPrincipal ">
+                <section id="sobre" class="sobreMi container"  >
+                    <div class="fillSobre">
+                        <p>Sobre mi</p>
+                    </div>
+                    <div class="textoSobre">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed sapien porta, faucibus erat in, tempus lorem.
+                             Aliquam aliquam porttitor pretium. Sed eget ipsum a urna vestibulum volutpat varius ac ipsum. Proin laoreet 
+                             vulputate eleifend. In eu rutrum lectus, eget ornare neque. Sed tincidunt dolor orci, sed scelerisque ipsum 
+                             tristique id. Duis aliquam quam ac dignissim scelerisque. Vestibulum ut ultrices mauris, vel aliquet massa. 
+                             Vestibulum turpis mauris, facilisis ac placerat a, pretium sit amet tortor. Vestibulum ante ipsum primis in
+                              faucibus orci luctus et ultrices posuere cubilia curae; Aenean a faucibus magna, at tristique enim. Cras 
+                              ornare neque eget mauris porta elementum. Donec scelerisque bibendum dignissim. Morbi et feugiat nunc. 
+                              Maecenas orci nunc, sodales ut enim eu, suscipit pretium lacus. Pellentesque mollis neque id maximus scelerisque. </p>
+                    </div>
 
+                </section>
+                <section id="forma" class="formacion container" >
+                    <div class="fillSobre">
+                        <p>Formación Académica</p>
+                    </div>
+                    <div class="contenidoFormacion">
+                        <ul>
+                            <li>
+                                <h3>Nombre centro educativo 1</h3>
+                                <h2> <strong>Título obtenido 1   - 2022 </strong></h2>
+                                <p><i class="bi bi-arrow-right-short"></i> Graduado con honores académicos.  </p>
+                                <p><i class="bi bi-arrow-right-short"></i> Promedio general de 8.6  </p>
+
+                            </li>
+                            <hr>
+                            <li>
+                                <h3>Nombre centro educativo 2</h3>
+                                <h2><strong>Título obtenido 2   -   2016 </strong></h2>
+                                <p><i class="bi bi-arrow-right-short"></i> Bachiller con orientación en economía.  </p>
+                                <p><i class="bi bi-arrow-right-short"></i> Integrante de las Olimpíadas Matemáticas.  </p>
+
+                            </li>
+                            <hr>
+                            <li>
+                                <h3>Nombre centro educativo 3</h3>
+                                <h2><strong>Título obtenido 3   -  2011 </strong></h2>
+                                <p><i class="bi bi-arrow-right-short"></i> Bachiller con orientación en economía.  </p>
+                                <p><i class="bi bi-arrow-right-short"></i> Integrante de las Olimpíadas Matemáticas.  </p>
+                            </li>                           
+                        </ul>
+                    </div>
+                </section>      
+                <section id="expe" class="experiencia container" >
+                    <div class="fillSobre">
+                        <p>Experiencia Laboral</p>
+                    </div>
+                    <div class="contenidoFormacion">
+                        <ul>
+                            <li>
+                                <h3>Nombre centro educativo 1</h3>
+                                <h2> <strong>Título obtenido 1   - 2022 </strong></h2>
+                                <p><i class="bi bi-arrow-right-short"></i> Graduado con honores académicos.  </p>
+                                <p><i class="bi bi-arrow-right-short"></i> Promedio general de 8.6  </p>
+
+                            </li>
+                            <hr>
+                            <li>
+                                <h3>Nombre centro educativo 2</h3>
+                                <h2><strong>Título obtenido 2   -   2016 </strong></h2>
+                                <p><i class="bi bi-arrow-right-short"></i> Bachiller con orientación en economía.  </p>
+                                <p><i class="bi bi-arrow-right-short"></i> Integrante de las Olimpíadas Matemáticas.  </p>
+
+                            </li>
+                            <hr>
+                            <li>
+                                <h3>Nombre centro educativo 3</h3>
+                                <h2><strong>Título obtenido 3   -  2011 </strong></h2>
+                                <p><i class="bi bi-arrow-right-short"></i> Bachiller con orientación en economía.  </p>
+                                <p><i class="bi bi-arrow-right-short"></i> Integrante de las Olimpíadas Matemáticas.  </p>
+                            </li>                           
+                        </ul>
+                    </div>
+                </section>                             
+                
+            </section>
+           
+    </div>    
     <script>
         var nombrePersona = document.getElementById('nombrePrincipal');
         var profesionPersona = document.getElementById('profesionPrincipal');
@@ -44,8 +139,9 @@
                 console.log("contenido de datos pesona : ", datosPersona);
 
                 nombrePersona.innerHTML = datosPersona.name.title + " "+
-                datosPersona.name.first + " "+ datosPersona.name.last;
+                                            datosPersona.name.first + " "+ datosPersona.name.last;
 
+                fotoPersona.src= datosPersona.picture.large;
                  });
 
            

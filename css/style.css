@@ -5,26 +5,162 @@
 body{
 	min-height: 100vh;
 	background-color: white;
-	font-size: 16px;
 }
 
 h1{
- font-family: 'Courier New', Courier, monospace;
+	font-family: 'Dancing Script', cursive;
+	font-size: 20px;
+
 }
+
 h2{
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 h3{
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 20px;
 }
 
 /*  ... HEADER .... */
 header{
 	background-color: darkslategray;
+	height: 180px;
+	z-index: 999;
 }
 .bandaHead{
 	background-color: rgb(37, 143, 143);
 
 }
 
+.encabezadoDatos{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: center;
+
+}
+
+.imagenLogo{
+	border: white solid 6px;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin-top: -10px;
+	z-index: 999;
+
+
+}
+.fotoPpal{
+	width: 100%;
+	height: auto;
+	border: rgb(97, 109, 235) solid 3px;
+	border-radius: 50%;
+}
+.nombreProfesion{
+	margin-left: 20%;
+	text-align: center;
+	color: white;
+}
+.nombreProfesion p{
+	font-family: 'Dancing Script', cursive;
+	font-size: 4rem;
+}
 /* ..................  */
+.contenidoTotal{
+	display: flex;
+	flex-direction: row;
+}
+/*.....  BANDA ASIDE .....*/
+.bandaAside{
+	background-color: rgb(97, 109, 235);
+	width: 200px;
+	height: 500px;
+	z-index: 99;
+}
+.listadoItems ul{
+	list-style-type: none;
+	margin: 30px 0;
+	padding: 0;
+}
+.listadoItems button{
+	width: 200px;
+	margin: 5px 0;
+	padding: 10px 0;
+}
+
+/*  .... SECCIONES GENERAL .... */
+.seccionPrincipal{
+	height: 500px;
+	background-color: green;
+	width: 100%;
+}
+/*..............................*/
+
+.sobreMi{
+	width: 100%;
+	background-color: gray;
+	margin: 10px 0;
+	display: none;
+}
+.fillSobre{
+	width: 100%;
+	height: 80px;
+	background-color: rgb(97, 109, 235);
+	border-radius: 10px;
+	text-align: center;
+	padding-bottom: 10px;
+
+
+}
+.fillSobre p{
+	font-family: 'Dancing Script', cursive;
+	font-size: 4rem;	
+	color: white;
+}
+.textoSobre{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 10px;
+}
+
+/*..............................*/
+
+.formacion{
+	width: 100%;
+	background-color: gray;
+	height: 480px;
+	margin: 10px 0;
+	display: none;	
+	overflow: auto;	
+
+}
+.contenidoFormacion{
+	overflow: auto;
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 15px;
+	overflow: auto;	
+}
+.contenidoFormacion p{
+	font-size: 1.3rem;
+}
+.bi-arrow-right-short{
+	font-size: 30px;
+	font-weight: bold;
+	color: darkslategray;
+	top: 10px;
+
+}
+
+/*..............................*/
+
+.experiencia{
+	width: 100%;
+	background-color: gray;
+	height: 480px;
+	margin: 10px 0;
+	display: block;	
+	overflow: auto;	
+
+}
+
