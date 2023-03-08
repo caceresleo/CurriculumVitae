@@ -19,30 +19,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Mulish:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="container-fluid  mt-4">
+    <div class="capsulaSuperior container">
+        <div class="margenSuperior"></div>
+    </div>
+    <header class="container-fluid ">
         <div class="container  encabezadoDatos">            
                 <div class="imagenLogo ">
                     <img id="fotoCarnet" class="fotoPpal" src="logo1.png" alt="fotoCarnet">
                 </div>
                 <div class="nombreProfesion ">
-                    <p id="nombrePrincipal">Leonardo Gabriel Cáceres</p>
-                    <h3 id="profesionPrincipal">Lic. en Administración</h3>
+                    <p id="nombrePrincipal"></p>
+                    <div class="profesion">
+                        <h3 id="profesionPrincipal">Lic. en Administración  - </h3>
+                        <p id="edad">  </p> <p>   Años</p>                       
+                    </div>
                 </div>
         </div>    
     </header>
+
+
     <div class="container  contenidoTotal">
             <aside class="bandaAside ">
                 <div class="listadoItems">
                     <ul>
-                        <li><button > <i class="bi bi-person-bounding-box"></i>   Sobre Mi</button></li>
-                        <li><button> <i class="bi bi-book-half"></i>   Formación Académica</button> </li>
-                        <li><button> <i class="bi bi-globe2"></i>   Idiomas</button> </li>
-                        <li><button> <i class="bi bi-briefcase-fill"></i>   Experiencia Laboral</button> </li>
-                        <li><button> <i class="bi bi-search-heart"></i>   Otros Conocimientos</button></li>
-                        <li><button> <i class="bi bi-person-lines-fill"></i>   Contacto</button></li>
+                        <li><button onclick="seleccionSeccion('sobre')"> <i class="bi bi-person-bounding-box"></i>   Sobre Mi</button></li>
+                        <li><button onclick="seleccionSeccion('forma')"> <i class="bi bi-book-half"></i>   Formación Académica</button> </li>
+                        <li><button onclick="seleccionSeccion('leng')"> <i class="bi bi-globe2"></i>   Idiomas</button> </li>
+                        <li><button onclick="seleccionSeccion('expe')"> <i class="bi bi-briefcase-fill"></i>   Experiencia Laboral</button> </li>
+                        <li><button onclick="seleccionSeccion('conoc')"> <i class="bi bi-search-heart"></i>   Otros Conocimientos</button></li>
+                        <li><button onclick="seleccionSeccion('cont')"> <i class="bi bi-person-lines-fill"></i>   Contacto</button></li>
                     </ul>
                 </div>
             </aside>
+
             <section class="seccionPrincipal ">
                 <section id="sobre" class="sobreMi container"  >
                     <div class="fillSobre">
@@ -90,7 +99,8 @@
                             </li>                           
                         </ul>
                     </div>
-                </section>      
+                </section>   
+
                 <section id="expe" class="experiencia container" >
                     <div class="fillSobre">
                         <p>Experiencia Laboral</p>
@@ -98,54 +108,151 @@
                     <div class="contenidoFormacion">
                         <ul>
                             <li>
-                                <h3>Nombre centro educativo 1</h3>
-                                <h2> <strong>Título obtenido 1   - 2022 </strong></h2>
-                                <p><i class="bi bi-arrow-right-short"></i> Graduado con honores académicos.  </p>
-                                <p><i class="bi bi-arrow-right-short"></i> Promedio general de 8.6  </p>
+                                <h2> <strong>Nombre de la Empresa 1  </strong></h2>
+                                <h3> Puesto en la empresa 1 , 2020  -  presente </h3>
+                                <p><i class="bi bi-arrow-right-short"></i> Asistencia administrativa integral a Gerencia  </p>
+                                <p><i class="bi bi-arrow-right-short"></i> Seguimiento de Agenda. Revisión de idoneidad de documentos y control de archivo.  </p>
 
                             </li>
                             <hr>
                             <li>
-                                <h3>Nombre centro educativo 2</h3>
-                                <h2><strong>Título obtenido 2   -   2016 </strong></h2>
-                                <p><i class="bi bi-arrow-right-short"></i> Bachiller con orientación en economía.  </p>
-                                <p><i class="bi bi-arrow-right-short"></i> Integrante de las Olimpíadas Matemáticas.  </p>
+                                <h2> <strong>Nombre de la Empresa 2  </strong></h2>
+                                <h3> Puesto en la empresa 2 , 2015  -  2020 </h3>
+                                <p><i class="bi bi-arrow-right-short"></i> Recepción de cliente, manejo del conmutador.  </p>
+                                <p><i class="bi bi-arrow-right-short"></i> Asistencia a mesa de entradas.  </p>
 
                             </li>
                             <hr>
                             <li>
-                                <h3>Nombre centro educativo 3</h3>
-                                <h2><strong>Título obtenido 3   -  2011 </strong></h2>
-                                <p><i class="bi bi-arrow-right-short"></i> Bachiller con orientación en economía.  </p>
-                                <p><i class="bi bi-arrow-right-short"></i> Integrante de las Olimpíadas Matemáticas.  </p>
-                            </li>                           
+                                <h2> <strong>Nombre de la Empresa 3  </strong></h2>
+                                <h3> Puesto en la empresa 3 , 2011  -  2015 </h3>
+                                <p><i class="bi bi-arrow-right-short"></i> Organización de libros de entrada y salida.  </p>
+                                <p><i class="bi bi-arrow-right-short"></i> Trabajos de administración contable.  </p>
+
+                            </li>                         
                         </ul>
                     </div>
-                </section>                             
+                </section>    
+
+                <section id="leng" class="idiomas container" >
+                    <div class="fillSobre">
+                        <p>Idiomas</p>
+                    </div>
+                    <div class="contenidoFormacion">
+                        <ul>
+                            <li>
+                                <div class="idiomaEsp">
+                                    <h3>Español </h3>
+                                  <div class="progress" style="height: 25px;">
+                                    <div class="progress-bar  bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><strong>Nativo</strong> </div>
+                                  </div>
+                                </div>  
+                            </li>
+                            <hr>
+                            <li>
+                                <div class="idiomaIng">
+                                    <h3>Inglés </h3>
+                                  <div class="progress" style="height: 25px;">
+                                    <div class="progress-bar  bg-success" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><strong>Avanzado -  Lectura y Escritura </strong> </div>
+                                  </div>
+                                </div> 
+
+                            </li>
+                            <hr>
+                            <li>
+                                <div class="idiomaAle">
+                                    <h3>Alemán </h3>
+                                  <div class="progress" style="height: 25px;">
+                                    <div class="progress-bar  bg-info" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><strong>Intermedio -  Lectura y Escritura </strong> </div>
+                                  </div>
+                                </div> 
+                            </li>                         
+                        </ul>
+                    </div>
+                </section>         
+                
+                <section id="cont" class="contacto container" >
+                    <div class="fillSobre">
+                        <p>Contacto</p>
+                    </div>
+                    <div class="contenidoContactos">
+                        <ul>
+                            <li>
+                                <div class="espacioContactos">
+
+                                    <i class="bi bi-phone"></i>
+                                    <p id="telefono"></p>
+
+                                </div>  
+                            </li>
+                            <li>
+                                <div class="espacioContactos">
+
+                                    <i class="bi bi-envelope-paper"></i>
+                                    <p id="email"></p>
+
+                                </div> 
+
+                            </li>
+                            <li>
+                                <div class="espacioContactos">
+
+                                    <i class="bi bi-whatsapp"></i>
+                                    <p>+54 9 <span id="wapp"></span></p>
+
+                                </div> 
+                            </li>  
+                            <li>
+                                <div class="espacioContactos">
+
+                                    <i class="bi bi-house"></i>
+                                    <p><span id="calle"></span> <span id="numero"></span> - <span id="codigo"></span> - <span id="estado"></span>.</p>
+
+                                </div> 
+                            </li>                                
+                            
+                        </ul>
+                    </div>
+                </section>    
+                
+                <section id="conoc" class="conocimientos container" >
+                    <div class="fillSobre">
+                        <p>Otros Conocimientos</p>
+                    </div>
+                    <div class="contenidoFormacion">
+                        <ul>
+                            <li>
+                                <h2> <strong>Capacitación en contablilidad  </strong></h2>
+                                <p>Cras faucibus orci ac magna dapibus congue. Vestibulum dapibus mi sit amet mi viverra porttitor. 
+                                    Proin in lacus sed tellus vulputate vehicula. Sed varius nibh metus, ut auctor magna tincidunt sed. 
+                                    Curabitur ut magna a est vestibulum dignissim. Curabitur pellentesque quam neque, ac malesuada mauris
+                                     ullamcorper sed. Nullam posuere rutrum dapibus.</p>
+                            </li>
+                            <hr>
+                            <li>
+                                <h2> <strong>Gestión de Proyectos  </strong></h2>
+                                <p>In ac nisl hendrerit nunc vestibulum placerat. Phasellus ac quam fringilla, tincidunt nisl et, porta orci. 
+                                    Maecenas mollis purus eu nisl consectetur, a viverra massa molestie. Fusce et lacinia velit. Nunc mollis 
+                                    eros sit amet auctor tempus. Morbi sit amet pulvinar diam. Phasellus elit sapien, semper at velit at, 
+                                    commodo molestie eros.</p>
+                            </li>
+                            <hr>
+                            <li>
+                                <h2> <strong>Sistema de Gestión de Ventas  </strong></h2>
+                                <p>Pellentesque felis erat, semper a accumsan a, molestie et dolor. Integer ut tempus sapien. Maecenas a urna 
+                                    eu erat interdum fermentum. Suspendisse potenti. Curabitur et quam ac nunc tincidunt tincidunt. Phasellus 
+                                    sem mauris, porttitor ac fringilla quis, porttitor at arcu. Phasellus porttitor vel purus vitae rhoncus. </p>
+                            </li>                       
+                        </ul>
+                    </div>
+                </section>   
                 
             </section>
            
-    </div>    
-    <script>
-        var nombrePersona = document.getElementById('nombrePrincipal');
-        var profesionPersona = document.getElementById('profesionPrincipal');
-        var fotoPersona = document.getElementById('fotoCarnet');
+    </div>   
+    
+    
+    <script src="js/contenidoscript.js"></script>
 
-
-        fetch('https://randomuser.me/api/?format=json')
-            .then(x => x.text())
-            .then(y => {
-                var datosPersona = JSON.parse(y).results[0];
-                console.log("contenido de datos pesona : ", datosPersona);
-
-                nombrePersona.innerHTML = datosPersona.name.title + " "+
-                                            datosPersona.name.first + " "+ datosPersona.name.last;
-
-                fotoPersona.src= datosPersona.picture.large;
-                 });
-
-           
-
-    </script>
 </body>
 </html>
