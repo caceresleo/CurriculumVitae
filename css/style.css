@@ -144,8 +144,13 @@ header{
 
 .sobreMi{
 	width: 100%;
+	height: 480px;
+
 	margin: 10px 0;
 	display: block;
+
+	overflow: auto;	
+
 }
 .fillSobre{
 	width: 100%;
@@ -165,6 +170,10 @@ header{
 	width: 80%;
 	margin-left: 10%;
 	margin-top: 10px;
+
+	overflow: auto;	
+
+
 }
 
 /*..............................*/
@@ -214,6 +223,9 @@ header{
 	display: none;	
 	overflow: auto;	
 }
+.progress-bar strong{
+	text-shadow: grey 0 2px;
+}
 
 /*..............................*/
 
@@ -255,3 +267,221 @@ header{
 	overflow: auto;	
 }
 
+
+
+/* Adaptable (Responsivo) */
+@media screen and (max-width: 480px) {
+	.nuevah2{
+		font-size: 18px;
+
+	}
+	.nuevah3{
+		font-size: 13px;
+
+	}
+
+
+	.capsulaSuperior{
+		height: 10px;
+	}
+	.margenSuperior{
+		width: 200px;
+		height: 10px;
+		margin-left: -10px;
+
+	
+	}
+
+	.encabezadoDatos{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		align-content: center;
+	
+	}
+
+
+	.imagenLogo{
+		border: white solid 2px;
+		width: 100px;
+		height: auto;
+		border-radius: 50%;
+		margin-top: 5px;
+		z-index: 999;
+	
+	
+	}
+
+	.nombreProfesion{
+		margin-left: 0;
+		text-align: center;
+		color: white;
+	}
+	.nombreProfesion p{
+		font-family: 'Dancing Script', cursive;
+		font-size: 20px;
+		padding-bottom: 0;
+	}
+	.profesion{
+		display: flex;
+		flex-direction: row;
+	}
+	.profesion p{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 15px;
+		margin-top: -12px;
+	}	
+
+
+
+	/*.....  BANDA ASIDE .....*/
+.bandaAside{
+	background-color: rgb(97, 109, 235);
+	width: 100px;
+	height: 100%;
+	z-index: 99;
+	margin-left: -10px;
+}
+
+
+.listadoItems ul{
+	list-style-type: none;
+	margin: 30px 0;
+	padding: 0;
+}
+
+.listadoItems button{
+	width: 100%;
+	height: 50px;
+	margin:  0;
+	padding: 3px 0;
+	position: relative;
+	text-align: start;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 0.9rem;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+.listadoItems button:hover{
+	color: white;
+	background-color: darkslategray;
+}
+.listadoItems button:after{
+	content: "";
+	background: #f1f1f1;
+	display: block;
+	position: absolute;
+	padding-top: 300%;
+	padding-left: 350%;
+	margin-left: -20px !important;
+	margin-top: -120%;
+	opacity: 0;
+	transition: all 0.8s
+}
+.listadoItems button:active:after {
+	padding: 0;
+	margin: 0;
+	opacity: 1;
+	transition: 0s
+  }
+
+.seccionPrincipal{
+	height: 100%;
+	width: 100%;
+}
+
+	/*.....  .......... .....*/
+/*.......SOBRE MI .................*/
+
+.sobreMi{
+	width: 100%;
+	margin: 10px 0;
+	display: block;
+}
+.fillSobre{
+	width: 100%;
+	height: 55px;
+	background: rgb(97, 109, 235);
+	background: radial-gradient(circle, darkslategray 0%, darkslategray 58%, rgb(97, 109, 235) 100%);
+	border-radius: 10px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.fillSobre p{
+	font-family: 'Dancing Script', cursive;
+	font-size: 2.5rem;	
+	color: white;
+	height: fit-content;
+}
+.textoSobre{
+	width: 100%;
+	margin-left: 2%;
+	margin-top: 5px;
+	text-align: justify;
+}
+.textoSobre p{ 
+	font-size: 15px;
+}
+
+/*.....FORMACION ACADEMICA......................*/
+.formacion{
+	width: 100%;
+	height: 480px;
+	margin: 10px 0;
+	display: none;	
+	overflow: auto;	
+
+}
+.contenidoFormacion{
+	overflow: auto;
+	width: 100%;
+	margin-left: -10px;
+	margin-top: 15px;
+	overflow: auto;	
+}
+
+.contenidoFormacion p{
+	font-size: 12px;
+}
+.bi-arrow-right-short{
+	font-size: 15px;
+	font-weight: bold;
+	color: darkslategray;
+	top: 10px;
+
+}
+
+/*.....CONTACTOS.............*/
+
+.contacto{
+	width: 100%;
+	height: 480px;
+	margin: 10px 0;
+	display: none;	
+	overflow: auto;	
+}
+.espacioContactos{
+	margin-top: 20px;
+	margin-left: -25px;
+	display: flex;
+	flex-direction: row;	
+	font-size: 1.5rem;
+}
+
+.espacioContactos p{
+	margin-left: 10px;
+	font-size: 12px;
+}
+.espacioContactos i{
+	font-size: 22px;
+	padding-top: 0;
+	color: rgb(97, 109, 235);
+}
+
+/*..............................*/
+/*..............................*/
+
+
+}
