@@ -83,7 +83,7 @@ header{
 }
 .profesion p{
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 2rem;
 }
 /* ..................  */
 .contenidoTotal{
@@ -242,6 +242,7 @@ header{
 	display: flex;
 	flex-direction: row;	
 	font-size: 1.5rem;
+	padding-left: 5px;
 }
 
 .contenidoContactos ul{
@@ -255,6 +256,13 @@ header{
 	font-size: 40px;
 	padding-top: 0;
 	color: rgb(97, 109, 235);
+}
+
+.espacioContactos:hover{
+	background-color: rgb(193, 196, 193);
+	border: 1px solid grey;
+	border-radius: 5px;
+	cursor: pointer;
 }
 
 /*..............................*/

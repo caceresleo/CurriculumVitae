@@ -10,6 +10,17 @@ var emailPersona = document.getElementById('email');
 var telefonoPersona = document.getElementById('telefono');
 var wappPersona = document.getElementById('wapp');
 
+/*.......contactos .................*/
+function envioWap() {
+  const url = `https://wa.me/5491234567?text=Queremos%20contactarte%20para%20una%20entrevista%20de%20trabajo`;
+      window.open(url, '_blank'); 
+     }
+var datosemail = '';
+function mailTo()
+     {
+     window.location.href = `mailto:${datosemail}`;
+     }     
+
 /*... secciones  .....*/
 var secciones = [
     'conoc',
@@ -46,5 +57,8 @@ fetch('https://randomuser.me/api/?format=json')
         emailPersona.innerHTML = datosPersona.email;
         telefonoPersona.innerHTML = datosPersona.cell;
         wappPersona.innerHTML = datosPersona.cell;
+
+        numerowap= '549'+wappPersona.innerText;
+        datosemail= emailPersona.innerText;
 
          });
