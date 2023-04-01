@@ -12,7 +12,7 @@ var wappPersona = document.getElementById('wapp');
 
 /*.......contactos .................*/
 function envioWap() {
-  const url = `https://wa.me/5491234567?text=Queremos%20contactarte%20para%20una%20entrevista%20de%20trabajo`;
+  const url = `https://wa.me/5494319897?text=Queremos%20contactarte%20para%20una%20entrevista%20de%20trabajo`;
       window.open(url, '_blank'); 
      }
 var datosemail = '';
